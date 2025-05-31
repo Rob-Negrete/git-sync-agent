@@ -14,14 +14,12 @@ options:
   branch: main
   sync_interval: 300
   target_dir: /config/sync
-  mappings:
-    - source: "face-rekon"
-      target: "/config/face-rekon"
+  mappings: []
 schema:
   repo_url: str
   branch: str
   sync_interval: int
   target_dir: str
   mappings:
-    - source: str
-      target: str
+    - source: "str?"
+      target: "str?"
