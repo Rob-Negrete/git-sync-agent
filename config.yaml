@@ -7,7 +7,7 @@ boot: auto
 host_network: false
 init: false
 options:
-  repo_url: "https://${GITHUB_TOKEN}@github.com/Rob-Negrete/git-sync-agent.git"
+  repo_url: "https://github.com/Rob-Negrete/git-sync-agent.git"
   branch: "main"
   sync_interval: 300
   target_dir: "/config/sync"
