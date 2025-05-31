@@ -2,10 +2,13 @@ name: Git Sync Agent
 version: "1.0.0"
 slug: git_sync_agent
 description: Sincroniza carpetas de GitHub a Home Assistant de forma automática.
+url: https://github.com/Rob-Negrete/git-sync-agent.git
 startup: application
 boot: auto
 host_network: false
 init: false
+arch:
+  - amd64
 options:
   repo_url: "https://github.com/Rob-Negrete/git-sync-agent.git"
   branch: "main"
@@ -16,4 +19,3 @@ schema:
   branch: str
   sync_interval: int
   target_dir: str
-image: "ghcr.io/home-assistant/amd64-base"
