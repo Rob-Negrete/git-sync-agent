@@ -1,0 +1,25 @@
+name: Git Sync Agent
+version: "1.0.0"
+slug: git-sync-agent
+description: Sincroniza archivos desde un repositorio Git hacia carpetas específicas de Home Assistant OS.
+url: https://${GITHUB_TOKEN}@github.com/Rob-Negrete/git-sync-agent
+arch:
+  - amd64
+startup: services
+boot: auto
+options:
+  repo_url: "https://${GITHUB_TOKEN}@github.com/Rob-Negrete/git-sync-agent.GIT"
+  branch: "main"
+  sync_interval: 3600
+  mappings:
+    - source: "face-rekon"
+      target: "/config/face-rekon"
+    - source: "oz-gallery"
+      target: "/config/oz-gallery"
+schema:
+  repo_url: str
+  branch: str
+  sync_interval: int
+  mappings:
+    - source: str
+      target: str
