@@ -1,5 +1,5 @@
 name: Git Sync Agent
-version: "1.0.4"
+version: "1.0.5"
 slug: git_sync_agent
 description: Sincroniza carpetas de GitHub a Home Assistant de forma automática.
 url: "https://github.com/Rob-Negrete/git-sync-agent.git"
