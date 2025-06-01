@@ -10,7 +10,7 @@ init: false
 arch:
   - amd64
 options:
-  repo_url: https://Rob-Negrete:{GITHUB_TOKEN}@github.com/Rob-Negrete/ha-addons.git
+  repo_url: git@github.com:Rob-Negrete/ha-addons.git
   branch: main
   sync_interval: 300
   target_dir: /config/sync
