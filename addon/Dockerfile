@@ -1,4 +1,4 @@
-FROM alpine:3.18
+FROM FROM ghcr.io/home-assistant/amd64-base:latest
 
 RUN apk add --no-cache git rsync jq bash openssh
 
