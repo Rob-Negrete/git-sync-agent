@@ -9,6 +9,7 @@ MAPPINGS=$(jq -c '.mappings' /data/options.json)
 WORKDIR="/tmp/git-sync"
 
 clone_repo() {
+  date
   echo "[INFO] Clonando $REPO_URL (branch: $BRANCH)..."
   rm -rf "$WORKDIR"
   git clone --depth 1 -b "$BRANCH" "$REPO_URL" "$WORKDIR"
